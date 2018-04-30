@@ -4,9 +4,11 @@ threadsafe: true
 
 handlers:
 - url: /
-  static_files: www/index.html
-  upload: www/index.html
+  expiration: 1s
+  static_files: _site/index.html
+  upload: _site/index.html
 
 - url: /(.*)
-  static_files: www/\1
-  upload: www/(.*)
+  expiration: 1s
+  static_files: _site/\1
+  upload: _site/(.*)
