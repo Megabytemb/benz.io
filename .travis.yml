@@ -4,9 +4,13 @@ rvm:
 jobs:
   include:
     - stage: build
-      script: bundle exec jekyll build
+      install:
+        - gem install jekyll
+      script: jekyll build
     - stage: test
-      script: bundle exec htmlproof ./_site
+      install:
+        - gem install html-proofer
+      script: htmlproof ./_site
     - stage: deploy
       script: cp -r ./_site ./www
       deploy: &gae
