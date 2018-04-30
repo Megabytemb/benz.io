@@ -6,6 +6,8 @@ jobs:
     - stage: build
       install:
         - gem install jekyll
+        - gem install jemoji
+        - gem install redcarpet
       script: jekyll build
     - stage: test
       install:
