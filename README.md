@@ -1,4 +1,4 @@
 # Dat Site
-[![Build Status](https://travis-ci.org/megabytemb/megabytemb.github.io.svg?branch=master)](https://travis-ci.org/megabytemb/megabytemb.github.io)
+[![Build Status](https://travis-ci.org/megabytemb/benz.io.svg?branch=master)](https://travis-ci.org/megabytemb/benz.io)
 
-[megabytemb.github.io](http://megabytemb.github.io)
+[benz.io](https://benz.io)
