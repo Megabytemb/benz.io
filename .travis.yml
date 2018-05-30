@@ -9,6 +9,7 @@ deploy: &gae
   provider: gae
   keyfile: client_secrets.json
   project: benz-io
+  verbosity: info
 
 env:
   global:
