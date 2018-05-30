@@ -4,9 +4,11 @@ rvm:
 
 install:
   - gem install jekyll jemoji redcarpet html-proofer
-script: jekyll build && htmlproofer ./_site && ls
+script: jekyll build && htmlproofer ./_site
 deploy: &gae
   provider: gae
+  # Skip cleanup so _sites is still there
+  skip_cleanup: true
   keyfile: client_secrets.json
   project: benz-io
   verbosity: info
