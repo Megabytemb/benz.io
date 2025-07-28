@@ -4,3 +4,11 @@ site/_site/
 .DS_Store
 .jekyll-metadata
 Gemfile.lock
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+coverage/
+*.tsbuildinfo
